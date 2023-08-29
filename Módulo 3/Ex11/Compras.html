@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de compras</title>
+    <script src="./Compras.js"></script>
+  </head>
+  <body>
+    <h1>Carrinho de compras</h1>
+    <br />
+    <h2>Adicionar ao carrinho</h2>
+    <p>
+      <label for="amount">Quantidade do produto:</label>
+      <input type="text" name="amount" id="amount" />
+      <label for="product">Nome do produto:</label>
+      <input type="text" name="product" id="product" />
+      <label for="value">Valor:</label>
+      <input type="text" name="value" id="value" />
+      <button onclick="addCompras()">Adicionar</button>
+    </p>
+    <h2>Remover do carrinho</h2>
+    <label for="valueToRemove">Valor do produto:</label>
+    <input type="text" name="valueToRemove" id="valueToRemove" />
+    <button onclick="removeCompras()">Remover</button>
+    <br />
+    <h2>Carrinho</h2>
+    <ul id="listaCompras"></ul>
+  </body>
+</html>
